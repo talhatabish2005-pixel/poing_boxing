@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{ print length, NR }' \"/home/talha-tabish/Documents/landing page/index.html\")",
+      "Bash(python3 *)",
+      "Bash(xdg-open \"/home/talha-tabish/Documents/landing page/index.html\")",
+      "Bash(awk -F: '{print $1}')",
+      "Bash(grep -v \"^[0-9]*:.\\\\{500,\\\\}\")",
+      "Bash(command -v google-chrome chromium chromium-browser)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,4000 --screenshot=/tmp/claude-1000/-home-talha-tabish-Documents-landing-page/c8244ba1-b659-480f-8d38-e735ae4ea87e/scratchpad/full.png \"file://$\\(pwd\\)/index.html\")",
+      "Bash(mkdir -p ~/claude-shots)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,2400 --screenshot=/home/talha-tabish/claude-shots/full.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(command -v node)",
+      "Bash(node -e \"require\\('puppeteer'\\)\")",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,2400 --virtual-time-budget=4000 --run-all-compositor-stages-before-draw --screenshot=/home/talha-tabish/claude-shots/full2.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,6500 --virtual-time-budget=4000 --run-all-compositor-stages-before-draw --screenshot=/home/talha-tabish/claude-shots/full_tall.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(command -v convert identify magick)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,6500 --virtual-time-budget=4000 --run-all-compositor-stages-before-draw --screenshot=/home/talha-tabish/claude-shots/apparel.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(file check_*.jpg)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,7000 --virtual-time-budget=6000 --run-all-compositor-stages-before-draw --screenshot=/home/talha-tabish/claude-shots/full_new.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,7000 --virtual-time-budget=12000 --run-all-compositor-stages-before-draw --screenshot=/home/talha-tabish/claude-shots/full_retry.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,1400 --virtual-time-budget=4000 --run-all-compositor-stages-before-draw --screenshot=/home/talha-tabish/claude-shots/isolated.png file://__CMDSUB_OUTPUT__/isolated_test.html)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --window-size=1440,7000 --screenshot=/home/talha-tabish/claude-shots/plain.png file://__CMDSUB_OUTPUT__/index.html)",
+      "Bash(chromium --version)",
+      "Bash(chromium --headless --disable-gpu --no-sandbox --force-prefers-reduced-motion --window-size=1440,7000 --screenshot=/home/talha-tabish/claude-shots/reduced.png file:///home/talha-tabish/Documents/landing%20page/index.html)"
+    ]
+  }
+}
