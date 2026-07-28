@@ -478,28 +478,28 @@
       <div class="nav-item">
         <button class="nav-top">Fight Gear<span class="caret"></span></button>
         <div class="mega">
-          <a href="#shorts">Boxing &amp; MMA Gloves</a>
-          <a href="#shorts">Kickboxing Gloves</a>
-          <a href="#shorts">Head Gear</a>
+          <a href="#top" data-slide="0">Boxing &amp; MMA Gloves</a>
+          <a href="#top" data-slide="4">Kickboxing Gloves</a>
+          <a href="#top" data-slide="5">Head Gear</a>
           <a href="#wraps">Hand Wraps</a>
           <a href="#shorts">Mouth Guards</a>
-          <a href="#shorts">Shin Guards</a>
+          <a href="#top" data-slide="6">Shin Guards</a>
         </div>
       </div>
       <div class="nav-item">
         <button class="nav-top">Gym Equipment<span class="caret"></span></button>
         <div class="mega">
-          <a href="#shorts">Punching Bags</a>
-          <a href="#shorts">Pads &amp; Targets</a>
-          <a href="#shorts">Training Accessories</a>
+          <a href="#top" data-slide="7">Punching Bags</a>
+          <a href="#top" data-slide="8">Pads &amp; Targets</a>
+          <a href="#top" data-slide="9">Training Accessories</a>
         </div>
       </div>
       <div class="nav-item">
         <button class="nav-top">BJJ &amp; Apparel<span class="caret"></span></button>
         <div class="mega">
-          <a href="#kimonos">Kimonos / Gis</a>
+          <a href="#top" data-slide="1">Kimonos / Gis</a>
           <a href="#shorts">Rashguards</a>
-          <a href="#shorts">Fight Shorts</a>
+          <a href="#top" data-slide="2">Fight Shorts</a>
           <a href="#apparel">Leggings &amp; Training Wear</a>
           <a href="#apparel">Hoodies &amp; Tees</a>
         </div>
@@ -523,15 +523,15 @@
       <details>
         <summary>Fight Gear <span class="caret"></span></summary>
         <div class="sub-links">
-          <a href="#shorts">Boxing &amp; MMA Gloves</a>
-          <a href="#shorts">Kickboxing Gloves</a>
+          <a href="#top" data-slide="0">Boxing &amp; MMA Gloves</a>
+          <a href="#top" data-slide="4">Kickboxing Gloves</a>
           <a href="#wraps">Hand Wraps</a>
         </div>
       </details>
       <details>
         <summary>BJJ &amp; Apparel <span class="caret"></span></summary>
         <div class="sub-links">
-          <a href="#kimonos">Kimonos / Gis</a>
+          <a href="#top" data-slide="1">Kimonos / Gis</a>
           <a href="#apparel">Hoodies &amp; Tees</a>
         </div>
       </details>
@@ -930,6 +930,16 @@
       if(!reduceMotion){ timer = setInterval(function(){ goTo(current + 1); }, 5500); }
     }
     restart();
+
+    document.querySelectorAll('a[data-slide]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        goTo(parseInt(a.getAttribute('data-slide'), 10));
+        restart();
+        track.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+        if(panel){ panel.classList.remove('open'); }
+      });
+    });
   })();
 
   (function(){

@@ -28,7 +28,15 @@
       "Bash(git push *)",
       "Bash(grep -n -i \"kimono\\\\|jiu.jitsu\\\\|overcoffee\\\\|over coffee\\\\|instagram\\\\|facebook\\\\|price\\\\|\\\\$\" index.html)",
       "Bash(awk '{print length}' index.html)",
-      "Read(//home/talha-tabish/.claude/image-cache/ce19b6c2-67f6-4552-92f4-ab5bc0ecbdcb/**)"
+      "Read(//home/talha-tabish/.claude/image-cache/ce19b6c2-67f6-4552-92f4-ab5bc0ecbdcb/**)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(grep -q \"%$\" /tmp/pwinstall2.log)",
+      "Bash(google-chrome --headless=new --disable-gpu --no-sandbox --window-size=1400,3000 --screenshot=/tmp/claude-1000/-home-talha-tabish-Documents-landing-page/e22b5fd6-ca5e-4721-9a9d-5e8bd928f7bf/scratchpad/footer_check.png --hide-scrollbars http://localhost:8934/index.html)",
+      "Bash(npm install *)",
+      "Read(//home/talha-tabish/Downloads/**)",
+      "Bash(pkill -f \"http.server 89\")",
+      "Bash(pkill -f \"http.server 8950\")",
+      "Bash(git -C \"/home/talha-tabish/Documents/landing page\" diff --stat)"
     ]
   }
 }
