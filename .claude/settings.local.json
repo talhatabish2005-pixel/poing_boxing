@@ -36,7 +36,13 @@
       "Read(//home/talha-tabish/Downloads/**)",
       "Bash(pkill -f \"http.server 89\")",
       "Bash(pkill -f \"http.server 8950\")",
-      "Bash(git -C \"/home/talha-tabish/Documents/landing page\" diff --stat)"
+      "Bash(git -C \"/home/talha-tabish/Documents/landing page\" diff --stat)",
+      "Bash(awk NR>=540 && NR<=660 {print NR\": \"length\\($0\\)\" chars\"} *)",
+      "Bash(awk -F: 'length\\($0\\)<300')",
+      "Bash(awk NR>=686 && NR<=790 && length\\($0\\)<500 {print NR\": \"$0} *)",
+      "Bash(awk NR>=655 && NR<=700 && length\\($0\\)<500 {print NR\": \"$0} *)",
+      "Bash(cd *)",
+      "Bash(awk 'NR>=545 && NR<=680 && length\\($0\\)<500 {print NR\": \"$0}' index.html)"
     ]
   }
 }
